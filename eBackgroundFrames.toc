@@ -1,0 +1,7 @@
+## Interface: 50001
+## Version: 5.0.1
+## Title: eBackgroundFrames
+## Notes: Creates frames as a ui background.
+## Author: Ession
+
+eBackgroundFrames.lua
