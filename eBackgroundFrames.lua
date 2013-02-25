@@ -4,7 +4,7 @@
 --
 --    Description:  Creates frames as a ui background.
 --
---        Version:  5.0.1
+--        Version:  5.2.1
 --
 --         Author:  Mathias Jost (mail@mathiasjost.com)
 --
@@ -18,13 +18,13 @@
 -- -----------------------------------------------------------------------------
 local function eBackgroundFrames_OnEvent(event, arg1)
 
-	if GetNumSubgroupMembers() < 1 and GetNumGroupMembers() < 1 then
-		ebfSkadaDamage:Hide()
-		ebfSkadaThreat:Hide()
-	else
-		ebfSkadaDamage:Show()
-		ebfSkadaThreat:Show()
-	end
+  if GetNumSubgroupMembers() < 1 and GetNumGroupMembers() < 1 then
+    ebfSkadaDamage:Hide()
+    ebfSkadaThreat:Hide()
+  else
+    ebfSkadaDamage:Show()
+    ebfSkadaThreat:Show()
+  end
 
 end
 
@@ -37,7 +37,7 @@ local function FrameCreator(name, width, height, alpha, level)
   -- create the local frame
   local frame = CreateFrame("Frame", name, UIParent)
 
-  frame:SetFrameLevel(level)
+  frame:SetFrameStrata("BACKGROUND")
   frame:SetWidth(width)
   frame:SetHeight(height)
   frame:SetAlpha(alpha)
@@ -66,7 +66,6 @@ ebfTopBar:Show()
 ebfTopBar:SetScript("OnEvent", eBackgroundFrames_OnEvent)
 ebfTopBar:RegisterEvent("PLAYER_ENTERING_WORLD")
 ebfTopBar:RegisterEvent("GROUP_ROSTER_UPDATE")
-ebfTopBar:RegisterEvent("PET_BAR_UPDATE")
 
 
 -- -----------------------------------------------------------------------------
@@ -137,14 +136,6 @@ ebfButtonFrame:Show()
 -- Redesign blizzard frames
 -- -----------------------------------------------------------------------------
 WorldStateAlwaysUpFrame:SetPoint("TOP", 0, -50)
---LFGSearchStatus:ClearAllPoints()
---LFGSearchStatus:SetPoint("TOPLEFT", MiniMapLFGFrame, "BOTTOMRIGHT", 5, 0)
---LFGSearchStatus:SetBackdrop( {
---    bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
---    edgeFile = "Interface\\AddOns\\eBackgroundFrames\\HalBorder.tga",
---    tile = false, tileSize = 0, edgeSize = 8,
---    insets = { left = 2, right = 2, top = 2, bottom = 2 }
---  })
 
 
 WatchFrame:ClearAllPoints()
@@ -155,9 +146,9 @@ WatchFrame.SetPoint = function() end
 WatchFrame.SetAllPoints = function() end
 
 
-Boss1TargetFrame:ClearAllPoints()
-Boss1TargetFrame:SetPoint("TOPLEFT", "UIParent", "TOPRIGHT", 350,-300)
-Boss1TargetFrame.ClearAllPoints = function() end
-Boss1TargetFrame.SetPoint = function() end
-Boss1TargetFrame.SetAllPoints = function() end
+--Boss1TargetFrame:ClearAllPoints()
+--Boss1TargetFrame:SetPoint("TOPLEFT", "UIParent", "TOPRIGHT", 350,-300)
+--Boss1TargetFrame.ClearAllPoints = function() end
+--Boss1TargetFrame.SetPoint = function() end
+--Boss1TargetFrame.SetAllPoints = function() end
 
