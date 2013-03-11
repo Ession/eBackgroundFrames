@@ -79,7 +79,7 @@ ebfMinimap:Show()
 -- -----------------------------------------------------------------------------
 -- Create the Minimap Panel 1 Frame
 -- -----------------------------------------------------------------------------
-local ebfMinimapP1 = FrameCreator("ebfMinimapP1", 150, 30, 1.0, 1)
+local ebfMinimapP1 = FrameCreator("ebfMinimapP1", 75, 30, 1.0, 1)
 ebfMinimapP1:SetPoint("TOPLEFT", 16, -156)
 ebfMinimapP1:Show()
 
@@ -87,8 +87,8 @@ ebfMinimapP1:Show()
 -- -----------------------------------------------------------------------------
 -- Create the Minimap Panel 2 Frame
 -- -----------------------------------------------------------------------------
-local ebfMinimapP2 = FrameCreator("ebfMinimapP2", 150, 30, 1.0, 1)
-ebfMinimapP2:SetPoint("TOPLEFT", 16, -186)
+local ebfMinimapP2 = FrameCreator("ebfMinimapP2", 75, 30, 1.0, 1)
+ebfMinimapP2:SetPoint("TOPLEFT", 91, -156)
 ebfMinimapP2:Show()
 
 
@@ -96,7 +96,7 @@ ebfMinimapP2:Show()
 -- Create the Minimap Panel 3 Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimapP3 = FrameCreator("ebfMinimapP3", 150, 30, 1.0, 1)
-ebfMinimapP3:SetPoint("TOPLEFT", 16, -216)
+ebfMinimapP3:SetPoint("TOPLEFT", 16, -186)
 ebfMinimapP3:Show()
 
 
@@ -104,7 +104,7 @@ ebfMinimapP3:Show()
 -- Create the Skada Threat Frame
 -- -----------------------------------------------------------------------------
 local ebfSkadaThreat = FrameCreator("ebfSkadaThreat", 150, 185, 1.0, 1)
-ebfSkadaThreat:SetPoint("TOPLEFT", 16, -246)
+ebfSkadaThreat:SetPoint("TOPLEFT", 16, -216)
 ebfSkadaThreat:Show()
 
 
@@ -112,7 +112,7 @@ ebfSkadaThreat:Show()
 -- Create the Skada Damage Frame
 -- -----------------------------------------------------------------------------
 local ebfSkadaDamage = FrameCreator("ebfSkadaDamage", 150, 185, 1.0, 1)
-ebfSkadaDamage:SetPoint("TOPLEFT", 16, -431)
+ebfSkadaDamage:SetPoint("TOPLEFT", 16, -401)
 ebfSkadaDamage:Show()
 
 
