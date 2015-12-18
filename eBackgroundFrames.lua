@@ -4,7 +4,7 @@
 --
 --    Description:  Creates frames as a ui background.
 --
---        Version:  5.2.1
+--        Version:  6.2.1
 --
 --         Author:  Mathias Jost (mail@mathiasjost.com)
 --
