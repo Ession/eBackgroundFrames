@@ -138,14 +138,6 @@ ebfButtonFrame:Show()
 WorldStateAlwaysUpFrame:SetPoint("TOP", 0, -50)
 
 
-WatchFrame:ClearAllPoints()
-WatchFrame:SetPoint("TOPLEFT", "UIParent", "TOPRIGHT", 350,-300)
-WatchFrame:SetHeight(600)
-WatchFrame.ClearAllPoints = function() end
-WatchFrame.SetPoint = function() end
-WatchFrame.SetAllPoints = function() end
-
-
 --Boss1TargetFrame:ClearAllPoints()
 --Boss1TargetFrame:SetPoint("TOPLEFT", "UIParent", "TOPRIGHT", 350,-300)
 --Boss1TargetFrame.ClearAllPoints = function() end
