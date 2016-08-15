@@ -55,16 +55,6 @@ end
 
 
 -- -----------------------------------------------------------------------------
--- Create the top Bar
--- -----------------------------------------------------------------------------
-
--- local ebfTopBar = FrameCreator("ebfTopBar", 2000, 30, 1.0, 0)
--- ebfTopBar:SetFrameStrata("BACKGROUND")
--- ebfTopBar:SetPoint("TOP", 0, 5)
--- ebfTopBar:Show()
-
-
--- -----------------------------------------------------------------------------
 -- Create the Minimap Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimap = FrameCreator("ebfMinimap", 150, 150, 1.0, 2)
@@ -116,17 +106,9 @@ ebfSkadaDamage:Show()
 
 
 -- -----------------------------------------------------------------------------
--- Create the bottom Bar
--- -----------------------------------------------------------------------------
--- local ebfBottomBar = FrameCreator("ebfBottomBar", 2000, 30, 1.0, 0)
--- ebfBottomBar:SetPoint("BOTTOM", 0, -5)
--- ebfBottomBar:Show()
-
-
--- -----------------------------------------------------------------------------
 -- Create the Button Frame
 -- -----------------------------------------------------------------------------
-local ebfButtonFrame = FrameCreator("ebfButtonFrame", 455, 100, 1.0, 1)
+local ebfButtonFrame = FrameCreator("ebfButtonFrame", 455, 86, 1.0, 1)
 ebfButtonFrame:SetPoint("BOTTOM", 0, 10)
 ebfButtonFrame:Show()
 
@@ -135,11 +117,3 @@ ebfButtonFrame:Show()
 -- Redesign blizzard frames
 -- -----------------------------------------------------------------------------
 WorldStateAlwaysUpFrame:SetPoint("TOP", 0, -50)
-
-
---Boss1TargetFrame:ClearAllPoints()
---Boss1TargetFrame:SetPoint("TOPLEFT", "UIParent", "TOPRIGHT", 350,-300)
---Boss1TargetFrame.ClearAllPoints = function() end
---Boss1TargetFrame.SetPoint = function() end
---Boss1TargetFrame.SetAllPoints = function() end
-
