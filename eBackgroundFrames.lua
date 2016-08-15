@@ -58,21 +58,17 @@ end
 -- Create the top Bar
 -- -----------------------------------------------------------------------------
 
-local ebfTopBar = FrameCreator("ebfTopBar", 2000, 30, 1.0, 0)
-ebfTopBar:SetFrameStrata("BACKGROUND")
-ebfTopBar:SetPoint("TOP", 0, 5)
-ebfTopBar:Show()
-
-ebfTopBar:SetScript("OnEvent", eBackgroundFrames_OnEvent)
-ebfTopBar:RegisterEvent("PLAYER_ENTERING_WORLD")
-ebfTopBar:RegisterEvent("GROUP_ROSTER_UPDATE")
+-- local ebfTopBar = FrameCreator("ebfTopBar", 2000, 30, 1.0, 0)
+-- ebfTopBar:SetFrameStrata("BACKGROUND")
+-- ebfTopBar:SetPoint("TOP", 0, 5)
+-- ebfTopBar:Show()
 
 
 -- -----------------------------------------------------------------------------
 -- Create the Minimap Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimap = FrameCreator("ebfMinimap", 150, 150, 1.0, 2)
-ebfMinimap:SetPoint("TOPLEFT", 16, -6)
+ebfMinimap:SetPoint("TOPLEFT", 6, -6)
 ebfMinimap:Show()
 
 
@@ -80,7 +76,7 @@ ebfMinimap:Show()
 -- Create the Minimap Panel 1 Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimapP1 = FrameCreator("ebfMinimapP1", 75, 30, 1.0, 1)
-ebfMinimapP1:SetPoint("TOPLEFT", 16, -156)
+ebfMinimapP1:SetPoint("TOPLEFT", 6, -156)
 ebfMinimapP1:Show()
 
 
@@ -88,7 +84,7 @@ ebfMinimapP1:Show()
 -- Create the Minimap Panel 2 Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimapP2 = FrameCreator("ebfMinimapP2", 75, 30, 1.0, 1)
-ebfMinimapP2:SetPoint("TOPLEFT", 91, -156)
+ebfMinimapP2:SetPoint("TOPLEFT", 81, -156)
 ebfMinimapP2:Show()
 
 
@@ -96,7 +92,7 @@ ebfMinimapP2:Show()
 -- Create the Minimap Panel 3 Frame
 -- -----------------------------------------------------------------------------
 local ebfMinimapP3 = FrameCreator("ebfMinimapP3", 150, 30, 1.0, 1)
-ebfMinimapP3:SetPoint("TOPLEFT", 16, -186)
+ebfMinimapP3:SetPoint("TOPLEFT", 6, -186)
 ebfMinimapP3:Show()
 
 
@@ -104,31 +100,34 @@ ebfMinimapP3:Show()
 -- Create the Skada Threat Frame
 -- -----------------------------------------------------------------------------
 local ebfSkadaThreat = FrameCreator("ebfSkadaThreat", 150, 185, 1.0, 1)
-ebfSkadaThreat:SetPoint("TOPLEFT", 16, -216)
+ebfSkadaThreat:SetPoint("TOPLEFT", 6, -216)
 ebfSkadaThreat:Show()
+ebfSkadaThreat:SetScript("OnEvent", eBackgroundFrames_OnEvent)
+ebfSkadaThreat:RegisterEvent("PLAYER_ENTERING_WORLD")
+ebfSkadaThreat:RegisterEvent("GROUP_ROSTER_UPDATE")
 
 
 -- -----------------------------------------------------------------------------
 -- Create the Skada Damage Frame
 -- -----------------------------------------------------------------------------
 local ebfSkadaDamage = FrameCreator("ebfSkadaDamage", 150, 185, 1.0, 1)
-ebfSkadaDamage:SetPoint("TOPLEFT", 16, -401)
+ebfSkadaDamage:SetPoint("TOPLEFT", 6, -401)
 ebfSkadaDamage:Show()
 
 
 -- -----------------------------------------------------------------------------
 -- Create the bottom Bar
 -- -----------------------------------------------------------------------------
-local ebfBottomBar = FrameCreator("ebfBottomBar", 2000, 30, 1.0, 0)
-ebfBottomBar:SetPoint("BOTTOM", 0, -5)
-ebfBottomBar:Show()
+-- local ebfBottomBar = FrameCreator("ebfBottomBar", 2000, 30, 1.0, 0)
+-- ebfBottomBar:SetPoint("BOTTOM", 0, -5)
+-- ebfBottomBar:Show()
 
 
 -- -----------------------------------------------------------------------------
 -- Create the Button Frame
 -- -----------------------------------------------------------------------------
 local ebfButtonFrame = FrameCreator("ebfButtonFrame", 455, 100, 1.0, 1)
-ebfButtonFrame:SetPoint("BOTTOM", 0, -18)
+ebfButtonFrame:SetPoint("BOTTOM", 0, 10)
 ebfButtonFrame:Show()
 
 
